@@ -84,3 +84,14 @@ header{
         /*background-color: green;*/
     }
 }
+@media screen and (max-width: 400px){
+    /*nav{
+        height: 100%;
+    }*/
+    nav li{
+        display: block;
+    }
+    .container{
+        margin-top:80px;
+    }
+}
