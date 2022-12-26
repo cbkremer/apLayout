@@ -56,7 +56,83 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.79161441889!2d-51.2188929!3d-30.0428357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567f17f28d%3A0x2c2c5272bacf4d3a!2sSenac%20Tech!5e0!3m2!1spt-BR!2sbr!4v1672075712324!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- fim da div esquerda -->
             <div class="conteudo">
-                
+                <h2>Formulário</h2>
+                <form name="formUser">
+                    <div class="row">
+                        <div class="label">
+                            <label for="nome">Nome Completo:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="email">E-mail:</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="fone">Telefone:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="fone" id="fone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="end">Endereço:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="end" id="end">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label>Tipo pessoa:</label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" name="tpPessoa" id="tpCPF">
+                            <label for="tpCPF">CPF</label>
+                            <input type="radio" name="tpPessoa" id="tpCNPJ">
+                            <label for="tpCNPJ">CNPJ</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="senha">Senha</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="confSenha">Confirme senha:</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" name="confSenha" id="confSenha">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="imgUser">Foto perfil:</label>
+                        </div>
+                        <div class="input">
+                            <input type="file" name="imgUser" id="imgUser">
+                        </div>
+                    </div>
+                    <div id="imgPreview">
+                        <img src="" id="preview"/>
+                    </div>
+                    <div class="row">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar" onclick="return validar()">
+                    </div>
+                </form><!-- fim do formUser-->
             </div><!-- fim da div conteudo -->
         </div><!-- fim do container -->
         <div class="footer">
