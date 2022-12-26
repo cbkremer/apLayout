@@ -95,10 +95,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <label>Tipo pessoa:</label>
                         </div>
                         <div class="input">
-                            <input type="radio" name="tpPessoa" id="tpCPF">
+                            <input type="radio" name="tpPessoa" id="tpCPF" onclick="document.getElementById('divCPF').style.visibility='visible';
+                                                                                    document.getElementById('divCNPJ').style.visibility='hidden';">
                             <label for="tpCPF">CPF</label>
-                            <input type="radio" name="tpPessoa" id="tpCNPJ">
+                            <input type="radio" name="tpPessoa" id="tpCNPJ"onclick="document.getElementById('divCNPJ').style.visibility='visible';
+                                                                                    document.getElementById('divCPF').style.visibility='hidden';">
                             <label for="tpCNPJ">CNPJ</label>
+                        </div>
+                    </div>
+                    <div class="row" id="divCPF" style="visibility: hidden;">
+                        <div class="label">
+                            <label for="cpf">CPF:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="cpf" id="cpf" oninput="mascaraCPF(this)">
+                        </div>
+                    </div>
+                    <div class="row" id="divCNPJ" style="visibility: hidden;">
+                        <div class="label">
+                            <label for="cnpj">CNPJ:</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="cnpj" id="cnpj" oninput="mascaraCNPJ(this)">
                         </div>
                     </div>
                     <div class="row">

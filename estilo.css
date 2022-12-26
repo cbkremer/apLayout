@@ -95,3 +95,19 @@ header{
         margin-top:80px;
     }
 }
+/*------------------------------------------------------------------form*/
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.label{
+    float: left;
+    width: 25%;
+    margin-top:6px;
+}
+.input{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
