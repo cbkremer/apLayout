@@ -78,17 +78,17 @@ function validar(){
     var conf_senha = formUser.confSenha.value;
     
 
-    if(nome == "" || nome.length <= 3){
+    if(nome.length <= 3){
         alert("Informe o nome completo")
         formUser.nome.focus();
         return false;
     }
-    if(email == "" || email.length <= 10){
-        alert("Verifique o campo e-mail");
+    if(email.length <= 10){
+        alert("Informe um email válido");
         formUser.focus.email;
         return false;
     }
-    if(fone == "" || fone < 16){
+    if(fone.length < 16){
         alert("Telefone inválido");
         formUser.focus.fone;
         return false;
@@ -109,12 +109,12 @@ function validar(){
             return false;
         }
     }
-    if(endereco == "" || endereco.length < 3){
+    if(endereco.length < 3){
         alert("Informe um endereço válido");
         formUser.focus.endereco;
         return false;
     }
-    if(senha == "" || senha.length < 8){
+    if(senha.length < 8){
         alert(" Senha inválida");
         formUser.focus.senha;
         return false;
