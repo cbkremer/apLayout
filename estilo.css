@@ -112,9 +112,9 @@ header{
     margin-top: 6px;
 }
 input{
-    /**
+    /**/
     transition: 300ms;
-    **/
+    /**/
     color: purple;
 }
 input[type=text],input[type=email],input[type=password]{

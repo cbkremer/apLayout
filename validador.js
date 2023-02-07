@@ -69,10 +69,60 @@ function mascaraCNPJ(i){
 }
 function validar(){
     var nome = formUser.nome.value;
+    var email = formUser.email.value;
+    var fone = formUser.fone.value;
+    var cpf = formUser.cpf.value;
+    var cnpj = formUser.cnpj.value;
+    var endereco = formUser.end.value;
+    var senha = formUser.senha.value;
+    var conf_senha = formUser.confSenha.value;
+    
 
     if(nome == "" || nome.length <= 3){
-        alert("Informe o nome completo");
+        alert("Informe o nome completo")
         formUser.nome.focus();
         return false;
     }
+    if(email == "" || email.length <= 10){
+        alert("Verifique o campo e-mail");
+        formUser.focus.email;
+        return false;
+    }
+    if(fone == "" || fone < 16){
+        alert("Telefone inválido");
+        formUser.focus.fone;
+        return false;
+    }
+    if(cpf == "" && cnpj == ""){
+        alert("informe cpf ou cnpj");
+        return false;
+    }
+    else{
+        if(cpf.length < 14 && cnpj == ""){
+            alert("Informe um cpf válido");
+            formUser.focus.cpf;
+            return false;
+        }
+        else if(cnpj.length < 18 && cpf == ""){
+            alert("Informe um cnpj válido");
+            formUser.focus.cnpj;
+            return false;
+        }
+    }
+    if(endereco == "" || endereco.length < 3){
+        alert("Informe um endereço válido");
+        formUser.focus.endereco;
+        return false;
+    }
+    if(senha == "" || senha.length < 8){
+        alert(" Senha inválida");
+        formUser.focus.senha;
+        return false;
+    }
+    else if(conf_senha != senha){
+        alert(" As duas senhas devem ser iguais");
+        formUser.focus.confSenha;
+        return false;
+    }
+
 }
