@@ -113,7 +113,7 @@ header{
 }
 input{
     /**/
-    transition: 300ms;
+    transition: 800ms;
     /**/
     color: purple;
 }

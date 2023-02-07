@@ -124,5 +124,4 @@ function validar(){
         formUser.focus.confSenha;
         return false;
     }
-
 }
